@@ -51,7 +51,7 @@ body::before{
     width:400px;
     height:400px;
     background:#00f7ff;
-    filter:blur(220px);
+    filter:blur(80px);
     top:-150px;
     left:-150px;
     opacity:.25;
