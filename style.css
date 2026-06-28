@@ -1,0 +1,245 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0b1023;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(180deg,#00f7ff,#8a2be2);
+    border-radius:20px;
+}
+
+/* ===========================
+   BACKGROUND GLOW
+=========================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#00f7ff;
+    filter:blur(220px);
+    top:-150px;
+    left:-150px;
+    opacity:.25;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#8a2be2;
+    filter:blur(220px);
+    right:-150px;
+    bottom:-150px;
+    opacity:.25;
+    z-index:-2;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:white;
+}
+
+.logo span{
+    color:#00f7ff;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.4s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#00f7ff;
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:130px 8%;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h3{
+    color:#00f7ff;
+    font-size:28px;
+}
+
+.hero-text h1{
+    font-size:65px;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    color:#8a2be2;
+    font-size:34px;
+}
+
+.hero-text p{
+    margin-top:25px;
+    line-height:1.8;
+    color:#d0d0d0;
+    max-width:600px;
+}
+
+.buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    padding:15px 35px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(45deg,#00f7ff,#8a2be2);
+    border-radius:40px;
+    transition:.4s;
+    box-shadow:0 0 25px #00f7ff;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.btn2{
+    padding:15px 35px;
+    border:2px solid #00f7ff;
+    border-radius:40px;
+    text-decoration:none;
+    color:white;
+    transition:.4s;
+}
+
+.btn2:hover{
+    background:#00f7ff;
+    color:#000;
+}
+
+/* ===========================
+   HERO IMAGE
+=========================== */
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.circle{
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    background:linear-gradient(45deg,#00f7ff,#8a2be2,#ff00ff);
+    padding:8px;
+    animation:rotate 8s linear infinite;
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #050816;
+}
+
+@keyframes rotate{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+.heading{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:60px;
+    color:white;
+}
